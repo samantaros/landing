@@ -1,141 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f8e9e4">
-  <title>A Little Hello 💋</title>
-  <meta name="description" content="A little hello, just for you.">
-
-  <style>
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      padding: 24px 16px;
-      display: grid;
-      place-items: center;
-      font-family: Arial, sans-serif;
-      color: #4a292d;
-      background: linear-gradient(145deg, #fff7f2, #f3d9d8);
-    }
-
-    .card {
-      width: 100%;
-      max-width: 390px;
-      padding: 14px;
-      border-radius: 25px;
-      background: rgba(255, 250, 248, 0.96);
-      box-shadow: 0 15px 45px rgba(100, 45, 55, 0.13);
-      text-align: center;
-    }
-
-    .portrait {
-      display: block;
-      width: 100%;
-      height: auto;
-      max-height: 470px;
-      object-fit: cover;
-      aspect-ratio: 4 / 5;
-      border-radius: 17px;
-      background: #f0d8d3;
-    }
-
-    .eyebrow {
-      margin: 22px 0 8px;
-      font-size: 12px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #b16c7c;
-    }
-
-    h1 {
-      margin: 0 0 12px;
-      font-size: clamp(27px, 7vw, 34px);
-      line-height: 1.15;
-    }
-
-    .intro {
-      margin: 0 auto 22px;
-      max-width: 290px;
-      font-size: 16px;
-      line-height: 1.6;
-      color: #795a60;
-    }
-
-    .cta {
-      display: block;
-      width: 100%;
-      padding: 17px 12px;
-      border-radius: 999px;
-      background: #c65b75;
-      color: white;
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: bold;
-      letter-spacing: .4px;
-      transition: transform .15s ease;
-    }
-
-    .cta:active { transform: scale(.98); }
-
-    .note {
-      margin: 14px 0 8px;
-      font-size: 11px;
-      line-height: 1.5;
-      color: #98777b;
-    }
-
-    footer {
-      margin-top: 22px;
-      font-size: 11px;
-      color: #98777b;
-    }
-
-    footer a {
-      color: inherit;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f8e9e7">
+<title>Hey, you found me…</title>
+<style>
+:root{--cream:#fff8f3;--ink:#654653}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;padding:22px 14px;display:flex;justify-content:center;align-items:center;background:radial-gradient(ellipse at 8% 8%,#f4d8d5 0,transparent 35%),radial-gradient(ellipse at 95% 92%,#efd0d8 0,transparent 38%),var(--cream);color:var(--ink);font-family:"Trebuchet MS",Arial,sans-serif}
+.page{width:100%;max-width:460px;overflow:hidden;border-radius:28px;background:linear-gradient(160deg,#fffaf6 0%,#f9e8e6 58%,#f4dfe4 100%);box-shadow:0 18px 55px rgba(125,78,98,.14);text-align:center}
+.portrait{display:block;width:100%;height:auto;max-height:590px;object-fit:cover;object-position:center 35%}
+.content{padding:25px 25px 30px;background:radial-gradient(ellipse at 0% 100%,rgba(239,190,202,.38),transparent 42%),linear-gradient(180deg,rgba(255,248,243,.97),#f8e6e6)}
+h1{margin:0 0 15px;color:#74485d;font-family:Georgia,"Times New Roman",serif;font-size:clamp(31px,8vw,42px);font-weight:400;font-style:italic;line-height:1.15}
+.intro{margin:0 0 10px;font-size:19px;line-height:1.5}
+.profile-id{display:inline-block;margin:13px 0 22px;padding:9px 15px;border:1px solid rgba(175,112,143,.25);border-radius:999px;background:rgba(255,255,255,.52);color:#80566b;font-size:15px}
+.cta{display:block;width:100%;padding:19px 18px;border-radius:999px;background:linear-gradient(110deg,#ce8eaa,#985f7e);box-shadow:0 9px 20px rgba(151,91,121,.23);color:white;text-decoration:none;font-size:18px;font-weight:700;letter-spacing:.7px;transition:transform .18s ease,box-shadow .18s ease}
+.cta:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(151,91,121,.28)}
+.footer{margin:22px 0 0;color:#b47b96;font-size:23px;letter-spacing:7px}
+@media(max-width:380px){body{padding:10px}.page{border-radius:22px}.content{padding:22px 19px 26px}.intro{font-size:17px}}
+</style>
 </head>
-
 <body>
-  <main class="card">
-    <!-- Replace portrait.jpg with your own photo filename -->
-    <img
-      class="portrait"
-      src="portrait.jpg"
-      alt="My photo"
-    >
-
-    <p class="eyebrow">A little hello ❤️</p>
-    <h1>Hey, you found me… 💋</h1>
-
-    <p class="intro">
-      A little curious about me? 😉<br>
-      You're in the right place.
-    </p>
-
-    <!-- Replace the URL below with your registration page -->
-    <a
-      class="cta"
-      href="https://stripw.top/click?o=2&a=8393"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      💕 CONTINUE HERE
-    </a>
-
-    <p class="note">
-      You'll continue to the registration website.
-    </p>
-
-    <footer>
-      <a href="https://stripw.top/click?o=2&a=8393">
-        Open registration website
-      </a>
-    </footer>
-  </main>
+<main class="page">
+<img class="portrait" src="portrait.jpg" alt="Portrait">
+<section class="content">
+<h1>Hey, you found me… 💋</h1>
+<p class="intro">A little curious about me? 😉</p>
+<p class="intro">You're in the right place.</p>
+<div class="profile-id">💕 My profile ID on the site: <strong>40987</strong></div>
+<!-- Replace this example URL with your real registration/profile link. -->
+<a class="cta" href="https://YOUR-REGISTRATION-URL.com/" target="_blank" rel="noopener noreferrer">CONTINUE HERE&nbsp; →</a>
+<div class="footer">♡</div>
+</section>
+</main>
 </body>
 </html>
